@@ -1,0 +1,53 @@
+:root {
+    
+    /* Sizes*/
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xlg: 1.25rem;
+    --size-2xlg: 1.5rem;
+    --size-3xlg: 1.875rem;
+    --size-4xlg: 2.25rem;
+    --size-5xlg: 3rem;
+    --size-6xlg: 3.75rem;
+    --size-7xlg: 4.5rem;
+    --size-8xlg: 6rem;
+    --size-9xlg: 8rem;
+    --size-10xlg: 10rem;
+
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Dosis', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
