@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Tod.U - Login</title>
+    </head>
+
+    <header class="top">
+        <button class="btn-back-light" onclick="window.location.href='/'"> Voltar </button>
+    </header>
+    
+    <body class="main">
+    
+        <!---MAIN--->
+    <div class="main">
+    
+        <!---LEFT--->
+        <div class="left-login">
+        <!--    <img src="../public/Logo.png" class="login-Image" alt="Tod.U Logo"> -->
+        </div>
+        <!---LEFT--->
+    
+    <!---RIGHT--->
+        <div class="right-login">
+            <div class="card-log">
+                <h1>Bem vindo de volta!</h1>
+                <form method="POST" action="Logon.php">
+                
+                    <div class="textfield">
+                    <label for="user">Usuário:</label>
+                    <input id="user" name="nickname" type="text" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" name="password" type="password" placeholder="Senha">
+                </div>
+    
+                <button class="btn-next" type="submit" value="next">Próximo</button>
+                </form>
+                
+            </div>
+        </div>
+    <!---RIGHT--->
+    
+    </div>
+    <!---MAIN--->
+    
+    <div class="bg-img">
+        <img src="TodU decal.png" class="stripes-Image" alt="Tod.U Decal">
+    </div>
+    
+</body>
+
+<script type="module" src="../src/Login.jsx"></script>
+
+</html>
