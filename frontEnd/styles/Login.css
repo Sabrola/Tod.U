@@ -1,34 +1,95 @@
-.left-login {
-    border: solid red;
+.main {
+    margin-top: 3rem;
+    text-align: center;
 }
 
-/* xs
+/*Left*/
+.left_login {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+/*Left*/
+
+/*Right*/
+.right_login{
+    font-size: var(--size-base);
+}
+
+h1 {
+    padding-bottom: 0.5rem;
+}
+.card-log{
+    padding: 2rem;
+}
+
+form{
+    width: 100%;
+}
+/*Right*/
+
+.backgroundImage {
+    display: none;
+}
+
+
+/* xs */
 @media (min-width: 475px) {
+    .right_login{
+        font-size: var(--size-xlg);
+    }
+} 
+
+/* sm  */
+@media (min-width: 640px) {
+    .main {
+        margin-top: 5rem;
+    }
+    
+    .main_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    /*Left*/
+    .left_login {
+        padding: 0;
+
+    }
+ }
+
+
+/* md */
+@media (min-width: 768px) {
+    .main {
+        margin-top: 6rem;
+    }
+
+    /*Right*/
+    .right_login{
+        font-size: var(--size-xlg);
+    }
+
+    /*Right*/
 
 }
-
-/* sm
-/* @media (min-width: 640px) {
-
- } */
-
-
-/* md
-/* @media (min-width: 768px) {
-    
-} */
 
 /* lg
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
 
 } */
 
 /* xlg
-/* @media (min-width: 1280px) {
+@media (min-width: 1280px) {
 
 } */
 
-/* 2xlg
-/* @media (min-width: 1536px) {
-    
-}  */
+/* 2xlg  */
+@media (min-width: 1536px) {
+    /*Right*/
+    .right_login{
+        font-size: var(--size-4xlg);
+    }
+}

@@ -14,45 +14,48 @@
         <button class="btn-back-light" onclick="window.location.href='/'"> Voltar </button>
     </header>
     
-    <body class="main">
+    <body class="container">
     
         <!---MAIN--->
     <div class="main">
     
+    <div class="main_container">
         <!---LEFT--->
-        <div class="left-login">
-        <!--    <img src="../public/Logo.png" class="login-Image" alt="Tod.U Logo"> -->
+        <div class="left_login">
+            <img src="../Logo.png" class="login-Image" alt="Tod.U Logo">
         </div>
         <!---LEFT--->
-    
-    <!---RIGHT--->
-        <div class="right-login">
-            <div class="card-log">
-                <h1>Bem vindo de volta!</h1>
-                <form method="POST" action="Logon.php">
-                
+        
+        <!---RIGHT--->
+            <div class="right_login">
+                <div class="card-log">
+                    <h1>Bem vindo de volta!</h1>
+                    <form method="POST" action="Login.php">
+                    
+                        <div class="textfield">
+                        <label for="user">Usuário:</label>
+                        <input id="user" name="nickname" type="text" placeholder="Usuário">
+                    </div>
                     <div class="textfield">
-                    <label for="user">Usuário:</label>
-                    <input id="user" name="nickname" type="text" placeholder="Usuário">
+                        <label for="senha">Senha:</label>
+                        <input id="senha" name="password" type="password" placeholder="Senha">
+                    </div>
+        
+                    <button class="btn-next" type="submit" value="next">Próximo</button>
+                    </form>
+                    
                 </div>
-                <div class="textfield">
-                    <label for="senha">Senha:</label>
-                    <input id="senha" name="password" type="password" placeholder="Senha">
-                </div>
-    
-                <button class="btn-next" type="submit" value="next">Próximo</button>
-                </form>
-                
             </div>
-        </div>
-    <!---RIGHT--->
+        <!---RIGHT--->
+    </div>
     
     </div>
     <!---MAIN--->
     
-    <div class="bg-img">
-        <img src="TodU decal.png" class="stripes-Image" alt="Tod.U Decal">
-    </div>
+        <section class="backgroundImage">
+        <img src="../TodU decal.png" class="decalImage" alt="Tod.U Decal">
+    </section>
+    
     
 </body>
 

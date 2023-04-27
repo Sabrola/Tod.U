@@ -32,6 +32,9 @@ html {
 body {
     background-color: #fafafa;
     font-family: 'Dosis', sans-serif;
+
+    align-items: center;
+    justify-content: center;
 }
 
 img,
