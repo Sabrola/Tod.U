@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Tod.U - Registro</title>
+    </head>
+
+    <body>
+
+        <header class="top">
+            <button class="btn-back" onclick="window.location.href='/'"> Voltar </button>
+        </header>
+
+        <DIV class="main">
+        
+        
+            <!---MAIN--->
+        <div class="main-register">
+        
+            <!---LEFT--->
+            <div class="left-register">
+                <div class="card-regi">
+                    <h1>Bem-Vindo ao Tod.U! Seu site the anotações!</h1>
+                    
+                    <form method="POST" action="Logon.php">
+                    <div class="textfield">
+                        <label for="user">Nome de usuário:</label>
+                        <input id="user" name="nickname" type="text" placeholder="Usuário" maxlength="200">
+                    </div>
+                    <div class="textfield">
+                        <label for="user">Email:</label>
+                        <input id="email" name="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha:</label>
+                        <input id="senha" name="password" type="password"  placeholder="Senha" maxlength="100">
+                    </div>
+        
+                    <div class="textfield">
+                        <label for="senha">Repita sua senha:</label>
+                        <input id="rep-senha" name="twopassword" type="password" placeholder="Repita sua senha" maxlength="100">
+                    </div>
+        
+                    <button class="btn-regi" type="submit" value="next">Próximo</button>
+        
+                    </form>
+                    
+                </div>
+            </div>
+        <!---LEFT--->
+        
+        <!---RIGHT--->
+            <div class="right-register">
+                <img src="../public/Logo.png" class="register-Image" alt="Tod.U Logo">
+            </div>
+        <!---RIGHT--->
+        
+        </div>
+        <!---MAIN--->
+        
+        <div class="bg-img">
+            <img src="../public/TodU decal.png" class="stripes-Image" alt="Tod.U decal">
+        </div>
+        
+        </DIV>
+
+        <script type="module" src="../src/Registro.jsx"></script>
+
+    </body>
+</html>

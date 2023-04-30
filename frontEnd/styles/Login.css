@@ -76,15 +76,40 @@ form{
 
 }
 
-/* lg
+/* lg  */
 @media (min-width: 1024px) {
+    body {
+        overflow: hidden;
+    }
 
-} */
+    .main {
+        margin-top: 8rem;
+    }
 
-/* xlg
+    .backgroundImage {
+        max-width: 100rem;
+
+        display: block;
+        position: absolute;
+        bottom: -1000px;
+        left: -850px;
+        z-index: -1;
+    }
+}
+
+/* xlg */
 @media (min-width: 1280px) {
 
-} */
+    .backgroundImage {
+        max-width: 100rem;
+
+        display: block;
+        position: absolute;
+        bottom: -1000px;
+        left: -820px;
+        z-index: -1;
+    }
+}
 
 /* 2xlg  */
 @media (min-width: 1536px) {
@@ -92,4 +117,6 @@ form{
     .right_login{
         font-size: var(--size-4xlg);
     }
+
+    
 }
