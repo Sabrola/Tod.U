@@ -1,0 +1,110 @@
+/*  Left   */
+.leftRegister {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+.cardRegi{
+    padding: 2rem;
+}
+/*  Left   */
+
+/*  Right   */
+.rightRegister {
+    padding-top: 2rem;
+    font-size: var(--size-base);
+}
+/*  Right   */
+
+.bgImg {
+    display: none;
+}
+
+
+
+/* xs */
+@media (min-width: 475px) {
+    .right_login{
+            font-size: var(--size-xlg);
+        }
+}
+
+/* sm   */
+@media (min-width: 640px) {
+    .main {
+        margin-top: 1rem;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    /*Right*/
+    .right_login {
+        padding: 0;
+    }
+ }
+
+/* md */
+@media (min-width: 768px) {
+    .main {
+        margin-top: 1rem;
+    }
+
+    /**/
+    .leftRegister{
+        font-size: var(--size-xlg);
+    }
+
+    /**/
+
+}
+
+/* lg  */
+@media (min-width: 1024px) {
+    body {
+        overflow: hidden;
+    }
+
+    .main {
+        margin-top: 1rem;
+    }
+
+    .backgroundImage {
+        max-width: 100rem;
+
+        display: block;
+        position: absolute;
+        bottom: -1000px;
+        left: -850px;
+        z-index: -1;
+    }
+}
+
+/* xlg */
+@media (min-width: 1280px) {
+
+    .backgroundImage {
+        max-width: 100rem;
+
+        display: block;
+        position: absolute;
+        bottom: -1000px;
+        left: -820px;
+        z-index: -1;
+    }
+}
+
+/* 2xlg  */
+@media (min-width: 1536px) {
+
+    .leftRegister{
+        font-size: var(--size-4xlg);
+    }
+
+    
+}
