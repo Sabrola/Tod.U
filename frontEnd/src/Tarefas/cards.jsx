@@ -1,10 +1,9 @@
-import '../styles/modern-normalize.css';
-import '../styles/index.css';
+import '../../styles/modern-normalize.css';
 
-import '../styles/utils.css';
+import '../../styles/utils.css';
 
 
-export default function Cards(props) {
+function Tarefas(props) {
     return (
         <div className="tarefas_list">
 
@@ -14,6 +13,7 @@ export default function Cards(props) {
                 <div className='display_tarefas_top'>
                     <h3 className='tarefa_tittle'>{props.nome}</h3>
                     <div className='tarefa_date'>{props.data}</div>
+                    <section className='tarefa_hora'> {props.hora}</section>
                 </div>
                 {/* Titulo */} 
 
@@ -41,3 +41,5 @@ export default function Cards(props) {
         </div>
     )
 }
+
+export default Tarefas;
