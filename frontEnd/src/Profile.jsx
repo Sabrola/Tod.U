@@ -6,17 +6,14 @@ import '../styles/index.css';
 import '../styles/profile.css';
 import '../styles/utils.css';
 
-import contents from './Tarefas/cards.jsx';
+import lembrete_cards from './Tarefas/cards.jsx';
+{/* import Lembrete from '../src/Tarefas/cards'; */}
 
-function cards_contentstarefas(Props) {
-    const cards_info = contents.map((contents) =>
-    <li> key={contents.id}</li>
-    );
-    return (
-        <ul> {cards_info} </ul>
-    );
-}
 
-const root = ReactDOM.createRoot(document.getElementById('root')); 
-root.render( <NumberList numbers={numbers} />);
+const tarefas = cards.map((lembretes) =>
+    <li>{lembretes}</li>
+);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<ul>{tarefas}</ul>);
 
