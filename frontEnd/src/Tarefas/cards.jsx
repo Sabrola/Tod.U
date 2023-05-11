@@ -2,52 +2,51 @@ import '../../styles/modern-normalize.css';
 
 import '../../styles/utils.css';
 
-import contents from '../contents'
+import { notifs } from '../contents'
 
-function lembrete_cards(props) {
-    const contents = props.contents;
+export default function Lembretes() {
+    const lembretes_cards = notifs.map(card =>
+        <li key={card.notif_id}>
+            <div className="lembrete_card">
 
-    const cardContents = contents.map((contents) =>
-            <li>{contents}</li>
-    );
-    return(
-        <ul>
-            <div className="tarefas_list">
-
-                <div key="props.id" className="tarefa_card">
-
-                    {/* Titulo */} 
-                    <div className='display_tarefas_top'>
-                        <h3 className='tarefa_tittle'>{props.nome}</h3>
-                        <div className='tarefa_date'>{props.data}</div>
-                        <section className='tarefa_hora'> {props.hora}</section>
-                    </div>
-                    {/* Titulo */} 
-
-                    {/* Conteudo */}
-                    <div className='display_tarefas_content'>
-                        {/* Esquerda */}
-                        <div className='content_left'>
-                            <article className='tarefas_description'>{props.desc}</article>
-
-                            <article className='tarefas_btns'>
-                                <button className="tarefa_btn edit"> Editar</button>
-                                <button className='tarefa_btn delet'> Deletar</button>
-                            </article>
-                        </div>
-                        {/* Direita */}
-                        <div className='content_right'>
-                            <section className='notifs'>Notificação em: {props.notif}</section>
-                            <hr />
-                            <section className='repeat'> Repetindo: {props.repete}</section>
-                        </div>
-                        {/* Direita */}
-                    </div>
-                    {/* Conteudo */} 
+                {/* Titulo */} 
+                <div className='display_lembretes_top'>
+                    <h3 className='title'>{card.notif_name}</h3>
+                    <div className='tarefa_date'>{card.data}</div>
+                    <section className='tarefa_hora'> {card.hora}</section>
                 </div>
-            </div>
-        </ul>
-    );
-}
+                {/* Titulo */}
 
-export default lembrete_cards;
+                {/* Conteudo */}
+                <div className='display_tarefas_content'>
+
+                    {/* Esquerda */}
+                    <div className='content_left'>
+                        <article className='lembretes_desc'>
+                            {' ' + card.content + ' '}
+                        </article>
+
+                        <article className='lembretes_btns'>
+                            <button className="lembretes_btn edit"> Editar</button>
+                            <button className='lembretes_btn delet'> Deletar</button>
+                        </article>
+                    </div>
+                    {/* Esquerda */}
+
+                    {/* Direita */}
+                    <div className='content_right'>
+                        <section className='notifs'>Notificação: {card.notif_em}</section>
+                        <hr />
+                        <section className='repeat'> Repetindo : {card.repetir}</section>
+                    </div>
+                    {/* Direita */}
+
+                </div>
+                {/* Conteudo */}
+
+            </div>
+        </li>
+    );
+
+    return <ul>{lembretes_cards}</ul>;
+}
