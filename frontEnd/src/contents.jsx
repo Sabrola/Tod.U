@@ -8,7 +8,7 @@ export const notifs = [{
     repetir: '5'
 }, {
     notif_id: 1,
-    notif_name: 'nome_02',
+    notif_name: 'nome_02 looooooooooooooooo oong',
     content: 'rapapapapa, papappapa, prpapapapa2',
     data: '28/06',
     hora: '13:00',
@@ -16,8 +16,8 @@ export const notifs = [{
     repetir: '3'
 }, {
     notif_id: 2,
-    notif_name: 'nome_03',
-    content: 'rapapapapa, papappapa, prpapapapa3',
+    notif_name: 'nome_03 super duper uper long long',
+    content: 'rapapapapa, papappapa, prpapapapa3 super long wong wonf wong wong sonasoao oasnd ojad ojda',
     data: '20/11',
     hora: '12:00',
     notif_em: 'n',

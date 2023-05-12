@@ -4,9 +4,25 @@ body{
 }
 
 .user_space {
+    padding-top: 1rem;
+}
+
+h1{
+    margin-left: 2rem;
+}
+
+h3 {
+    margin-left: 4rem;
     border: red;
 }
 
-.sideBar {
-    border: red;
+.lembretes{
+    margin: auto;
+    border: solid red;
+
+    align-items: center;
+}
+
+.user_profile {
+    border:  red;
 }

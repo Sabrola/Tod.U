@@ -1,5 +1,5 @@
 import '../../styles/modern-normalize.css';
-
+import '../Tarefas/cards.css';
 import '../../styles/utils.css';
 
 import { notifs } from '../contents'
@@ -11,9 +11,10 @@ export default function Lembretes() {
 
                 {/* Titulo */} 
                 <div className='display_lembretes_top'>
-                    <h3 className='title'>{card.notif_name}</h3>
-                    <div className='tarefa_date'>{card.data}</div>
-                    <section className='tarefa_hora'> {card.hora}</section>
+                    <h2 className='title'>{card.notif_name}</h2>
+                    <div className='tarefa_date'>{card.data}
+                        <section className='tarefa_hora'> {card.hora}</section>
+                    </div>
                 </div>
                 {/* Titulo */}
 
