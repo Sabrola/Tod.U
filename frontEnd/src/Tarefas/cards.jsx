@@ -30,14 +30,14 @@ export default function Lembretes() {
                     {/* Esquerda */}
                     <div className='content_left'>
 
-                        <section className='notifs'>Notificação: {card.notif_em}</section>
+                        <section className='notifs'>Notificação: {card.notif_em} {card.notif_qn}</section>
                     </div>
                     {/* Esquerda */}
 
                     {/* Direita */}
                     <div className='content_right'>
 
-                        <section className='repeat'> Repetindo : {card.repetir}</section>
+                        <section className='repeat'> Repetindo em: {card.repetir} {card.repetir_qn}</section>
                     </div>
                     {/* Direita */}
 

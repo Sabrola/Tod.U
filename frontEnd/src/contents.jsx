@@ -5,7 +5,9 @@ export const notifs = [{
     data: '05/08/0000',
     hora: '15:30',
     notif_em: '6',
-    repetir: '5'
+    notif_qn: 'dias',
+    repetir: '5',
+    repetir_qn: 'dias'
 }, {
     notif_id: 1,
     notif_name: 'nome_02 looooooooooooooooo oong',
@@ -13,7 +15,9 @@ export const notifs = [{
     data: '28/06/0000',
     hora: '13:00',
     notif_em: '8',
-    repetir: '3'
+    notif_qn: 'horas',
+    repetir: '3',
+    repetir_qn: 'horas'
 }, {
     notif_id: 2,
     notif_name: 'nome_03 super duper uper long long',
@@ -21,7 +25,9 @@ export const notifs = [{
     data: '20/11/2023',
     hora: '12:00',
     notif_em: '1',
-    repetir: '15'
+    notif_qn: 'Mês',
+    repetir: '15',
+    repetir_qn: 'dias'
 }, {
     notif_id: 3,
     notif_name: 'nome_04  uper long long',
@@ -29,7 +35,9 @@ export const notifs = [{
     data: '34/12/0000',
     hora: '12:50',
     notif_em: '',
-    repetir: '35'
+    notif_qn: '',
+    repetir: '35',
+    repetir_qn: 'dias'
 }, {
     notif_id: 4,
     notif_name: 'nome_05 super duper upeg',
@@ -37,5 +45,7 @@ export const notifs = [{
     data: '09/04/0000',
     hora: '16:00',
     notif_em: '',
-    repetir: ''
+    notif_qn: '',
+    repetir: '',
+    repetir_qn: ''
 }];

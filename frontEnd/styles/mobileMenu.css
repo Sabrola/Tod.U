@@ -1,0 +1,32 @@
+.mobile_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+
+    background-color: #403a49;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Mobile_nav_menu {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.mob_username {
+    font-size: x-large;
+}
+
+.Mobile_nav_Line {
+    border-bottom: solid 3px #fafafafa;
+    padding-right: 1.5em;
+}

@@ -3,6 +3,11 @@ body{
     background-color: #403a49;
 }
 
+.top{
+    position: relative;
+    z-index: 9999;
+}
+
 .user_space {
     padding-top: 1rem;
 }
@@ -13,16 +18,113 @@ h1{
 
 h3 {
     margin-left: 4rem;
-    border: red;
 }
 
 .lembretes{
     margin: auto;
-    border: solid red;
 
     align-items: center;
 }
 
-.user_profile {
-    border:  red;
+/* Buttons */
+.btn-menu {
+    width: 8rem;
+    padding: 0.5rem 0rem;
+    margin: 0.8rem 1rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #fafafa;
+    
+    box-sizing: border-box;
+    border-bottom: solid #403a4900;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.3s;
 }
+
+.btn-menu:hover {
+    
+    transform: scale(1.1,1.1);
+
+    border-bottom: solid #403a49;
+    animation: fadeBackground 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeBackground {
+    from { border-bottom: solid #403a49; }
+    to { border-bottom: solid #fafafa; }
+}
+
+.leave_btn:hover {
+    
+    transform: scale(1.1,1.1);
+
+    animation: fadeSair 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeSair {
+    from { background-color: #27272a; }
+    to { background-color: #a52b2b; }
+}
+/* Buttons */
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.user_menu {
+    display: none;
+}
+
+/* xs
+@media (min-width: 475px) {
+
+}
+ } */
+
+/* sm
+@media (min-width: 640px) {
+
+ } */
+
+/* md */
+@media (min-width: 768px) {
+    /* Menu */
+    .user_menu {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        gap: 0.6rem;
+    }
+
+    .username {
+        font-size: xx-large;
+        padding: 0.5rem;
+    }
+
+    .menu_btn {
+        display: none;
+    }
+}
+
+/* lg
+@media (min-width: 1024px) {
+
+} */
+
+/* xlg
+@media (min-width: 1280px) {
+
+} */
+
+/* 2xlg
+@media (min-width: 1536px) {
+    
+} */
