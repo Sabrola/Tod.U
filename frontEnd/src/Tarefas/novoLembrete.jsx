@@ -10,87 +10,113 @@ export const NovoLembrete = () => {
                 
                 {/* Basico */}
                 <div className="lembrete_basic">
-                    <div className="top">
+                    <h1 className="top">
                         Crie um novo lembrete:
-                    </div>
+                    </h1> <br/>
                     <form clas="notif_basics">
+                        <label htmlfor="notif_name">Insira o nome do lembrete:</label>
                         <input class='textfield'
                         type="textfield"
-                        name="notif_name"
+                        name="notif_name"   id='notif_name'
                         required="required"
                         placeholder='Nome do seu lembrete'
                         ></input>
 
                         <div>
-                        <p> Insira a data e o horario do seu lembrete:</p>
+                        <label htmlfor="data"> Insira a data do seu lembrete:</label>
                         <input class='textfield data'
                         type="date"
-                        name="data"
+                        name="data"     id='data'
                         required="required"
                         placeholder='Data do evento'
                         ></input>
 
+                        <label htmlfor="data"> Insira o horario do seu lembrete:</label>
                         <input class='textfield hora'
                         type="time"
-                        name="hora"
+                        name="hora"     id='hora'
                         required="required"
                         placeholder='Hora do evento'
                         ></input>
 
                         </div>
 
-                        <p>Escreva informações adicionais do seu lembrete aqui:</p>
-                        <input class='textfield content'
-                        type="textfield"
-                        name="content"
-                        required=""
+                        <label htmlFor='content'>Escreva informações adicionais do seu lembrete aqui:</label>
+                        <textarea class='textfield content'
+                        name="content"      id='content'
+                        rows="5" cols='30'
                         placeholder='Insira o contéudo do lembrete aqui'
-                        ></input>
+                        ></textarea>
 
-                        <button class="btn-next"> Próximo </button>
+                        <section class='btn_area'>
+                        <button class="btn-next" type='submit'> Próximo </button>
+                        </section>
                     </form>
                 </div>
                 {/* Basico */}
                     <br />
                 {/* Notifs */}
                 <div className="lembretes_notif">
-                    <div className="top">
-                        Crie uma notificação:
-                        <br />
-                        Quando você quer que essa notificação aconteça:
-                    </div>
-                    <form>
+                    <h1 className="top">
+                        Criar uma notificação?
+                    </h1> <br/>
+
+                    <form> 
+                        <input type="radio" id="notif_sim" name="notif_sim" value="sim"></input>
+                            <label class='radio' for="notif_sim">Sim</label> 
+
+                         <input type="radio" id="notif_nao" name="notif_nao" value="nao"></input>
+                            <label class='radio' for="notif_nao">Não</label>
+                    </form> <br/>
+
+                    <form class='notifs_config'>
+                        <label htmlFor='notif_em notif_qn'>Quando você quer que essa notificação aconteça?</label>
+                        <section>
+                            <input class="textfield"
+                            type='number'
+                            name='notif_em'     id='notif_em'
+                            placeholder='Quantos'
+                            ></input>
+
+                        <select class="textfield"
+                            type='textfield'
+                            name='notif_qn'     id="notif_qn"
+                            >
+                                <option value="dias">Dias</option>
+                                <option value="horas"> Horas</option>
+                            </select>
+                        </section>
+
+                        <label htmlFor='repetir repetir_qn'>Você quer que essa noficação se repita?</label> <br/>
+                        <input type="radio" id="repetir" name="repetir_qn" value=""></input>
+                            <label class='radio' for="repetir_sim">Sim</label>
+
+                        <input type="radio" id="repetir" name="repetir_qn" value=""></input>
+                            <label class='radio' for="repetir_nao">Não</label>
+
+                        <section>
+                        <label htmlFor='repetir_qn'></label>
                         <input class="textfield"
                         type='number'
-                        name='notification'
-                        required='notif_em'
-                        placeholder=''
-                        ></input>
-
-                       <input class="textfield"
-                        type='textfield'
-                        name='notification'
-                        required='notif_qn'
-                        placeholder='Dia/Mês/Hora'
-                        ></input>
-
-                        <input class="textfield"
-                        type='textfield'
-                        name='repetir'
-                        required='required'
-                        placeholder='repetir'
-                        ></input>
-
-                        <input class="textfield"
-                        type='textfield'
                         name='repetir_qn'
-                        required='required'
-                        placeholder='Dia/Mês/Hora'
+                        placeholder='Quantos'
                         ></input>
 
-                        <button class="btn-next"> Próximo </button>
+                        <select class="textfield"
+                        type='number'
+                        name='repetir_qn'
+                        placeholder='Dia/Mês/Hora'
+                        >
+                            <option value="dias">Dias</option>
+                            <option value="horas"> Horas</option>
+                        </select>
+                        </section>
+
+                        <button class="btn-next"> Cancelar </button>
+
                     </form>
                 </div>
+                
             </div>
         </div>
     )
