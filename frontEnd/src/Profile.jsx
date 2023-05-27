@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import ReactDOM from 'react-dom/client'
 
 import '../styles/modern-normalize.css';
@@ -11,11 +12,13 @@ import mobileNav from '../src/mobileMenu'
 import Lembretes from '../src/Tarefas/cards'
 import { NovoLembrete } from './Tarefas/novoLembrete';
 
+
+
 mobileNav();
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Lembretes />
         <NovoLembrete />
+        <Lembretes />
     </React.StrictMode>
 )
 

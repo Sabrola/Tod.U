@@ -1,41 +1,150 @@
-body{
-   color: #000000;
+form {
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    text-align: center;
+.new_reminder {
+    box-shadow: 3px 3px 10px #000000;
+    place-items: center;
+    border-radius: 0.4rem;
+    
+    overflow: hidden;
+    margin: 1rem;
+    background-color: #fafafa;
+    color: #000000;
+    font-weight: 500;
 }
 
-section {
+/* Titulo */
+.lembrete_top {
     display: flex;
 }
 
-.radio {
-    padding-left: 0.2rem;
-    padding-right: 1rem;
+.data_hora {
+    width: 11rem;
+    padding: 0.7rem;
+    border-right: solid 0.1rem #878786;
 }
 
-.form_container {
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
+.data_hora > input {
+    
+    margin: 0;
+    padding: 0.5rem;
+    
+}
+
+.data_hora > label {
+    margin: 0;
+    margin-bottom: 0.1rem; 
+}
+
+.name {
+    padding: 0.5rem;
+}
+
+.name > label {
+    font-size: large;
+    margin: 0;
+}
+
+/* Titulo */
+
+/* Conteudo */
+
+.content {
+    padding: 1rem;
+}
+
+.content > textarea::placeholder {
+    color: #878786;
+}
+
+.content > label {
+    color:#000000;
+    margin-bottom: 2rem;
+}
+
+.content > textarea {
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color: #dbdbd8;
+    color: #444444;
+    font-size: 12pt;
+    outline-color: #878786;
+    box-sizing: border-box;
 
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.lembrete {
-    border: solid red;
-    border-radius: 5px;
-    padding: 2rem;
-    width: 35em;
-    display: flex;
-    gap: 1rem;
+/* Conteudo */
 
-    background-color: #f5f5f5;
+/* Notifs */
+.notif_space {
+    display: flex;
+}
+
+.notif_left {
+    width: 50%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.notif_right {
+    width: 50%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.notif_section {
+    display: flex;
+}
+/* Numbers */
+.notif_section > input {
+    width: 6rem;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #dbdbd8;
+    color: #444444;
+    font-size: 12pt;
+    outline-color: #878786;
+    box-sizing: border-box;
+    margin: 0.1rem;
+}
+
+.notif_section > input::placeholder {
+    color: #878786;
+}
+/* Numbers */
+
+
+/* Section */
+.notif_section > select {
+    width: 4rem;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #dbdbd8;
+    color: #444444;
+    font-size: 12pt;
+    outline-color: #878786;
+    box-sizing: border-box;
+    margin: 0.1rem;
+}
+
+.notif_section > select::placeholder {
+    color: #878786;
+}
+/* Section */
+
+/* Notifs */
+
+.btn_space {
+    display: flex;
+    padding: 1rem;
+}
+
+.btn_form {
+    margin: 0 0.3rem;
 }
