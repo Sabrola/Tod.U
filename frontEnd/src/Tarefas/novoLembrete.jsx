@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { nanoid } from 'nanoid';
 import '../../styles/modern-normalize.css';
 import '../../styles/novoLembrete.css';
 import '../../styles/utils.css';
 
 export const NovoLembrete = () => {
+
     return (
         <div className="new_reminder">
         
@@ -102,12 +104,14 @@ export const NovoLembrete = () => {
                 {/* Direita */}
 
             </div>
-        </form>
-
             <div className="btn_space">
-                <button className="btn-next btn_form"> Próximo </button>
+                <button className="btn-next btn_form" type='submit'> Próximo </button>
+            </div>
+        </form>
+            <div className="btn_space">
                 <button className="btn-next btn_form"> Cancelar </button>
             </div>
+            
         </div>
     )
 }
