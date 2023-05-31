@@ -1,10 +1,30 @@
 import React, { useState } from 'react'
-import { nanoid } from 'nanoid';
 import '../../styles/modern-normalize.css';
 import '../../styles/novoLembrete.css';
 import '../../styles/utils.css';
 
+
 export const NovoLembrete = () => {
+
+    const [lembreteState, setLembreteState] = useState({
+        data: "",
+        hora: "",
+        notif_name: "",
+        content: "",
+    });
+
+    const handleChange = (e) => {
+        setLembreteState({
+            ...LembreteState,
+            [e.target.name] : e.target.value
+        });
+    };
+
+    const handlesubmit = (e) => {
+        e.preventDefault();
+
+        console.log(lembreteState);
+    }
 
     return (
         <div className="new_reminder">
@@ -16,7 +36,7 @@ export const NovoLembrete = () => {
                     
                     <div className="data_hora textfield">
                         <label htmlFor="data"> Data do seu lembrete:</label>
-                        <input
+                        <input value={lembreteState.data}   onChange={handleChange}
                         type="date"
                         name="data"     id='data'
                         required="required"
@@ -24,7 +44,7 @@ export const NovoLembrete = () => {
                         ></input>
 
                         <label htmlFor="data"> Horário do seu lembrete:</label>
-                        <input className=' hora'
+                        <input value={lembreteState.hora}   onChange={handleChange}
                         type="time"
                         name="hora"     id='hora'
                         required="required"
@@ -34,7 +54,7 @@ export const NovoLembrete = () => {
 
                     <div className='name textfield'>
                         <label htmlFor="notif_name">Insira o nome do lembrete:</label> <br/>
-                        <input className=''
+                        <input value={lembreteState.notif_name}   onChange={handleChange}
                         type="textfield"
                         name="notif_name"   id='notif_name'
                         required="required"
@@ -47,7 +67,7 @@ export const NovoLembrete = () => {
             {/* Conteudo */}
             <div className="content">
                         <label htmlFor='content'>Escreva informações adicionais do seu lembrete aqui:</label>
-                        <textarea className='content'
+                        <textarea value={lembreteState.content}   onChange={handleChange}
                         name="content"      id='content'
                         rows="5" cols='30'
                         placeholder='Insira o contéudo do lembrete aqui'
@@ -105,7 +125,7 @@ export const NovoLembrete = () => {
 
             </div>
             <div className="btn_space">
-                <button className="btn-next btn_form" type='submit'> Próximo </button>
+                <button className="btn-next btn_form" type='submit' onClick={handlesubmit}> Próximo </button>
             </div>
         </form>
             <div className="btn_space">
