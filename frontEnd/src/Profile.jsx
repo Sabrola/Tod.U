@@ -12,12 +12,16 @@ import mobileNav from '../src/mobileMenu'
 import Lembretes from '../src/Tarefas/cards'
 import { NovoLembrete } from './Tarefas/novoLembrete';
 
-
+{/* /// Novo_Lembrete /// */}
+const handleSubmit = (newLembrete) =>{
+    setLembretes([...notifs, newLembrete])
+}
+{/* /// Novo_Lembrete_End /// */}
 
 mobileNav();
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <NovoLembrete />
+        <NovoLembrete onSubmit={handleSubmit}/>
         <Lembretes />
     </React.StrictMode>
 )

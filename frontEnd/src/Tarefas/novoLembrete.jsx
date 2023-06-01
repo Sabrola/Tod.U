@@ -2,34 +2,38 @@ import React, { useState } from 'react'
 import '../../styles/modern-normalize.css';
 import '../../styles/novoLembrete.css';
 import '../../styles/utils.css';
+import { nanoid } from 'nanoid'
 
 
-export const NovoLembrete = () => {
+export const NovoLembrete = ({onSubmit}) => {
 
+    {/* /// Cria variavel com nova info do lembrete */}
     const [lembreteState, setLembreteState] = useState({
+        id: nanoid(),
         data: "",
         hora: "",
         notif_name: "",
         content: "",
     });
 
+    {/* Controla o evento que vai criar a varialvel por chamar o nome na form */}
     const handleChange = (e) => {
         setLembreteState({
-            ...LembreteState,
+            ...lembreteState,
             [e.target.name] : e.target.value
         });
     };
 
     const handlesubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); {/* Impede o recaremento*/}
 
-        console.log(lembreteState);
+        onSubmit(lembreteState);
     }
 
     return (
         <div className="new_reminder">
         
-        <form className='basic_config'>
+        <form className='basic_config' onSubmit={handlesubmit}>
                 {/* Titulo */} 
 
                 <div className="lembrete_top">
@@ -43,7 +47,7 @@ export const NovoLembrete = () => {
                         placeholder='Data do evento'
                         ></input>
 
-                        <label htmlFor="data"> Horário do seu lembrete:</label>
+                        <label htmlFor="hora"> Horário do seu lembrete:</label>
                         <input value={lembreteState.hora}   onChange={handleChange}
                         type="time"
                         name="hora"     id='hora'
@@ -81,7 +85,7 @@ export const NovoLembrete = () => {
                 
                 {/* Esquerda */}
                 <div className='notif_left'>
-                <label htmlFor='notif_em notif_qn'>Quando você quer que essa notificação aconteça?</label>
+                <label htmlFor='notif_em'>Quando você quer que essa notificação aconteça?</label>
                         <section className='notif_section'>
                             <input
                             type='number'
@@ -103,17 +107,17 @@ export const NovoLembrete = () => {
                 {/* Direita */}
                 <div className='notif_right'>
 
-                    <label htmlFor='repetir repetir_qn'>Você quer que essa noficação se repita?</label>
+                    <label htmlFor='repetir'>Você quer que essa noficação se repita?</label>
                         <section className='notif_section'>
                             <input
                             type='number'
-                            name='repetir_qn'
+                            name='repetir'  id="repetir"
                             placeholder='Quantos'
                             ></input>
 
                             <select className=""
                             type='number'
-                            name='repetir_qn'
+                            name='repetir_qn'   id="repetir_qn"
                             placeholder='Dia/Mês/Hora'
                             >
                                 <option value="dias">Dias</option>
