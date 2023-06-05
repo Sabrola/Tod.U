@@ -1,11 +1,4 @@
-import '../../styles/modern-normalize.css';
-import '../Tarefas/cards.css';
-import '../../styles/utils.css';
-
-import { notifs } from '../contents'
-
-export default function Lembretes() {
-    const lembretes_cards = notifs.map(card =>
+const lembretes_cards = notifs.map(card =>
         <li key={card.notif_id}>
             <div className="lembrete_card">
 
@@ -26,11 +19,10 @@ export default function Lembretes() {
                 </div>
 
                 <div className='display_tarefas_content'>
-
                     {/* Esquerda */}
                     <div className='content_left'>
 
-                        <section className='notifs'>Notificação: {card.notif_em} {card.notif_qn}</section>
+                        <section className='notifs'> <button> ☓ asdfghjk</button>Notificação: {card.notif_em} {card.notif_qn}</section>
                     </div>
                     {/* Esquerda */}
 
@@ -47,6 +39,3 @@ export default function Lembretes() {
             </div>
         </li>
     );
-
-    return <ul>{lembretes_cards}</ul>;
-}
