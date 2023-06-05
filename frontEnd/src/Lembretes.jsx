@@ -18,7 +18,7 @@ function Lembretes_Stuff() {
         <div className='App'>
             <NovoLembrete onSubmit={handleSubmit} />
             <NovoLembreteConfig />
-            <Lembrete lembretes={lembretes}/>
+            <Lembrete lembretes={lembretes} setLembretes={setLembretes}/>
         </div>
     )
 }

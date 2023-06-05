@@ -39,15 +39,14 @@ export const NovoLembrete = ({onSubmit}) => {
                         <label htmlFor="data"> Data do seu lembrete:</label>
                         <input    value={addLembreteInfo.data}    onChange={handleChange}
                         type="date"
-                        name="data"     id='data'
-                        required="required"
+                        name="data"
                         placeholder='Data do evento'
                         ></input>
 
                         <label htmlFor="hora"> Horário do seu lembrete:</label>
                         <input     value={addLembreteInfo.hora}    onChange={handleChange}
                         type="time"
-                        name="hora"     id='hora'
+                        name="hora"
                         required="required"
                         placeholder='Hora do evento'
                         ></input>
@@ -57,7 +56,7 @@ export const NovoLembrete = ({onSubmit}) => {
                         <label htmlFor="notif_name">Insira o nome do lembrete:</label> <br/>
                         <input    value={addLembreteInfo.notif_name}    onChange={handleChange}
                         type="textfield"
-                        name="notif_name"   id='notif_name'
+                        name="notif_name"
                         required="required"
                         placeholder='Nome do seu lembrete'
                         ></input>
@@ -69,7 +68,7 @@ export const NovoLembrete = ({onSubmit}) => {
             <div className="content">
                         <label htmlFor='content'>Escreva informações adicionais do seu lembrete aqui:</label>
                         <textarea     value={addLembreteInfo.content}    onChange={handleChange}
-                        name="content"      id='content'
+                        name="content"
                         rows="5" cols='30'
                         placeholder='Insira o contéudo do lembrete aqui'
                         ></textarea>
