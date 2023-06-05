@@ -20,8 +20,14 @@
 h1 {
     padding-bottom: 0.5rem;
 }
-.card-log{
+.card_log{
     padding: 2rem;
+}
+
+.login_space{
+    margin: auto;
+
+    align-items: center;
 }
 
 form{
