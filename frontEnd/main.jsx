@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import Index from './App';
+import React from 'react';
+import ReactDOM from 'react-dom/client'
+
+import HomePage from './src/main';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Index />
+        <HomePage />
     </React.StrictMode>
 )

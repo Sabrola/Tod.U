@@ -15,6 +15,7 @@ import Lembretes_Stuff from './Lembretes';
 mobileNav();
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
+        <Profile />
         <Lembretes_Stuff />
     </React.StrictMode>
 )

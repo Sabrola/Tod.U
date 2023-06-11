@@ -7,10 +7,10 @@ import '../styles/index.css';
 import '../styles/Login.css';
 import '../styles/utils.css';
 
-import Rotas from './routes';
+import Login_stuff from './Login_app';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Rotas />
+        <Login_stuff />
     </React.StrictMode>
 )

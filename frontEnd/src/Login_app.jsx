@@ -1,5 +1,7 @@
 { /*////////////////// App.jsx ///////////////*/ }
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+
+import { AuthContext } from './Contexts/auth';
 
 import '../styles/modern-normalize.css';
 import '../styles/index.css';
@@ -8,17 +10,20 @@ import '../styles/utils.css';
 
 
 function Login_stuff() {
+    const { authenticated, login } = useContext(AuthContext);
+
     const [username, setUsername] = useState("");
     const [senha, setSenha] = useState("");
     
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("submit", { username, senha});
+
+        login(username, senha);
     }
 
     return (
         <div>
-        
         <form onSubmit={handleSubmit}>       
             <div className="textfield">
                 <label htmlFor="user">Usuário:</label>
