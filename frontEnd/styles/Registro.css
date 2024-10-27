@@ -7,7 +7,7 @@
 }
 
 .cardRegi{
-    padding: 2rem;
+    padding: 2rem; 
 }
 /*  Left   */
 
@@ -74,13 +74,13 @@
         margin-top: 1rem;
     }
 
-    .backgroundImage {
+    .bgImg {
         max-width: 100rem;
 
         display: block;
         position: absolute;
-        bottom: -1000px;
-        left: -850px;
+        bottom: -600px;
+        left: 400px;
         z-index: -1;
     }
 }
@@ -103,7 +103,7 @@
 @media (min-width: 1536px) {
 
     .leftRegister{
-        font-size: var(--size-4xlg);
+        font-size: var(--size-lg);
     }
 
     

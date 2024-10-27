@@ -11,21 +11,18 @@
     </head>
 
     <header class="top">
-        <button class="btn-back-dark" onclick="window.location.href='/'"> Voltar </button>
+        <button class="btn-back-dark leave_btn" onclick="window.location.href='/'"> Sair </button>
         
         <nav class="menu">
             <ul class="user_menu">
                 <li>
-                    <h4 class="username"> Nome do Usuario</h4>
+                    <h4 class="username"> [Nome do Usuario]</h4>
                 </li>
                 <li>
                     <button class="btn-menu"> Novo Lembrete</button>
                 </li>
                 <li>
                     <button class="btn-menu"> Editar Lembretes</button>
-                </li>
-                <li>
-                    <button class="btn-back-dark leave_btn"> Sair </button>
                 </li>
             </ul>
             <button class="btn-back-dark menu_btn mob_menu"> Menu</button>
@@ -49,7 +46,7 @@
                     <button class="btn-menu"> Editar Lembretes</button>
                 </li>
                 <li>
-                    <button class="btn-back-dark leave_btn"> Sair </button>
+                    <button class="btn-back-dark leave_btn" onclick="window.location.href='/'"> Sair </button>
                 </li>
             </ul>
         </nav>
@@ -63,6 +60,10 @@
             <h3>Aqui estão todos seus lembretes:</h3>
             <div class="lembretes" id="root"></div>
 
+        </div>
+
+        <div class="temp">
+            a
         </div>
 
         <script type="module" src="../src/Profile.jsx"></script>
