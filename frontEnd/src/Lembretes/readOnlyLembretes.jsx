@@ -23,8 +23,8 @@ const ReadOnlyLembretes = ( {lembrete, handleEditClick, handleDeleteClick} ) => 
                 <div className='display_tarefas_content'>
                     
                     <div className='Delete_Edit'>
-                        <button  className='edit' type="button" onClick={(event) => handleEditClick(event, lembrete)}>✎</button>
-                        <button className='delete' type="button" onClick={() => handleDeleteClick(lembrete.notif_id)}>☓</button>
+                        <button  className='edit' type="button" onClick={(event) => handleEditClick(event, lembrete)}>Editar Lembrete</button>
+                        <button className='delete' type="button" onClick={() => handleDeleteClick(lembrete.notif_id)}>Excluir Lembrete</button>
                     </div>
 
                     {/* Esquerda */}
